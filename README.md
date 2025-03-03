@@ -342,3 +342,6 @@ Will export the selected preset so that it can be shared with other people.
 
 Import any preset that was shared with you.
 
+## MIDI Out
+
+jAmp Percussive sends MIDI output. This means that its sequencer can be used in combination with other audio units. It is for instance possible to trigger samples by combining jAmp Percussive's MIDI output with a sample playing audio unit.
