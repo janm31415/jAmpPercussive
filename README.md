@@ -41,6 +41,34 @@ Note that you should only pay once to unlock the plugin. In case you have a new 
 Note that it is not possible to purchase the audio plugin via a third-party host application. If you run jAmp Percussive via for instance GarageBand you will get a message as in the image above. Just start the stand-alone jAmp 8100 application if you want to purchase.
 
 
-
+## Synthesizer view
 
 ![](images/percussive.png)
+
+The main view of the application contains a navigation bar on top, a bunch of knobs that control the synthesized sounds, a row with some additional settings, and 16 large buttons that will produce a drum sound when hit. 
+Let's go over the different buttons and knobs.
+
+### 16 large buttons
+The large buttons will produce a drum or cymbal sound when they are tapped, or when the corresponding MIDI note is triggered.
+There are two types of synthesized sounds available. The 8 top buttons can be used to create membrane based drum sounds, while the bottom 8 buttons are used to create cymbal sounds. 
+
+### MIDI step button
+To each button we can assign a MIDI note. Triggering this MIDI note will trigger the corresponding drum or cymbal sound.
+
+### Name id dropdown
+Each button can be given a name id. This name id will be used by the sequencer (see later).
+The top 8 buttons, corresponding to membrane based drum sounds, can be given one of the following name ids:
+  - kick
+  - snare
+  - tom lo
+  - tom hi
+  - cowbell
+
+while the bottom 8 buttons, corresponding to cymbal sounds, can be given the following name ids:
+
+  - hihat
+  - ride
+  - crash
+
+
+
