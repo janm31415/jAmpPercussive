@@ -96,7 +96,7 @@ Controls the inharmonicity of the sound by changing the frequency in the underly
 Any noise will first pass through a band pass filter. With this knob the frequency range of this band pass filter can be controlled.
 
 #### Noise
-Adds noise to the sound. Mainly used to simulate a snare.
+Adds filtered white noise to the sound. Mainly used to simulate a snare.
 
 #### Pitch bend
 When trigger, the drum will start a the initial pitch, but will then bend lower. The amount of pitch bend can be controlled with this knob.
@@ -115,3 +115,38 @@ Left or right stereo panning.
 
 ### Cymbal based drum parameters
 
+#### Pitch
+Control the pitch of the cymbal, in steps of half tones. Goes from -24 (or - 2 octaves) to +24 (or + 2 octaves).
+
+#### Decay
+Controls the length of resonance of the cymbal.
+
+#### High pass
+A high pass filter that will filter away the lower frequencies.
+
+#### Timbre
+Changes the overall sound of the cymbal.
+
+#### Attack
+Sharp attacking sound, or slowly increasing build up of sound.
+
+#### Crash delay
+This parameter assumes that the "Mallet soft" knob is not fully turned down. The parameter expresses in seconds (0s - 3s) the amount of delay until the cymbal sound "crashes".
+
+#### Noise
+Controls the amount of filtered white noise.
+
+#### Mallet soft
+The initial cymbal trigger can be controlled by this knob. It goes from a pop of white noise to a soft oscillating sine pulse, or anything in between.
+
+#### Mallet pitch
+See previous parameter. This parameter controls the frequency of the soft oscillating sine pulse of the mallet.
+
+#### Velocity
+Represents the force of a cymbal trigger.
+
+#### Level
+Finetune the gain of this drum.
+
+#### Pan
+Left or right stereo panning.
