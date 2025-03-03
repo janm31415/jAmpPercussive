@@ -302,6 +302,24 @@ In the case that the current step is mutating and following the "Vocabulary" sce
 
 ![](images/channels.png)
 
+### Volume / Pan rectangle
+The Channels view lets you easily change the volume and panning of the 8 sequencer lanes (with each lane corresponding to a percussion id).
+
+### Mute
+Mute this channel.
+
+### Solo
+Only play this channel, and mute all the other channels.
+
+### Decay
+When mutating (see "mutate" knob), allow the mutation to change the decay parameter.
+
+### Pitch
+When mutating (see "mutate" knob), allow the mutation to change the pitch parameter. Set to 0 if no pitch should be changed. Increment to allow for more pitch changes.
+
+### Steps
+There is a general Steps knob that controls the steps for one bar in general. However, here the number of steps for a given channel can be controlled seperately so that polyrhythms can be created.
+
 ## Presets view
 
 ![](images/presets.png)
