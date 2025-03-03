@@ -1,2 +1,2 @@
-# jAmpPercussive
-jAmp Percussive Manual
+# jAmp Percussive (AUv3) manual
+![](images/percussive.png)
