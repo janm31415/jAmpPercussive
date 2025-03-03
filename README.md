@@ -46,7 +46,7 @@ Note that it is not possible to purchase the audio plugin via a third-party host
 ![](images/percussive.png)
 
 The main view of the application contains a navigation bar on top, a bunch of knobs that control the synthesized sounds, a row with some additional settings, and 16 large buttons that will produce a drum sound when hit. 
-Let's go over the different buttons and knobs.
+Let's go over the different buttons and knobs from the bottom of the view to the top.
 
 ### 16 large buttons
 The large buttons will produce a drum or cymbal sound when they are tapped, or when the corresponding MIDI note is triggered.
@@ -70,5 +70,48 @@ while the bottom 8 buttons, corresponding to cymbal sounds, can be given the fol
   - ride
   - crash
 
+Note that a name id is unique. If a button is given the name id "hihat", then any other "hihat" button will become empty.
 
+### Silence mode
+This is a tappable button. When activated, the large buttons will not trigger a sound anymore. This is interesting when one wants to modify the parameters of a drum or cymbal while the sequencer is playing without causing and extra trigger.
+
+### Membrane based drum parameters
+
+#### Pitch
+Represents the main pitch of the drum sound, in Hertz.
+
+#### Decay
+Controls the length of resonance of the drum.
+
+#### Low pass
+A low pass filter that will filter away the higher frequencies.
+
+#### Overtone gain
+Controls the inharmonicity of the sound by changing the amount of feedback gain in the underlying all-pass filter.
+
+#### Overtone pitch
+Controls the inharmonicity of the sound by changing the frequency in the underlying all-pass filter.
+
+#### Noise pitch
+Any noise will first pass through a band pass filter. With this knob the frequency range of this band pass filter can be controlled.
+
+#### Noise
+Adds noise to the sound. Mainly used to simulate a snare.
+
+#### Pitch bend
+When trigger, the drum will start a the initial pitch, but will then bend lower. The amount of pitch bend can be controlled with this knob.
+
+#### Mallet
+Simulates the usage of soft and hard mallets.
+
+#### Velocity
+Represents the force of a drum trigger.
+
+#### Level
+Finetune the gain of this drum.
+
+#### Pan
+Left or right stereo panning.
+
+### Cymbal based drum parameters
 
