@@ -153,7 +153,7 @@ Left or right stereo panning.
 
 ## Navigation bar
 
-On top of the view we have the navigation bar.
+At the top of the view is the navigation bar.
 
 ### Copy
 
@@ -175,7 +175,7 @@ Switch between the synthesizer view and the sequencer view.
 
 ### Play / Stop
 
-Start or stop the sequencer.
+Starts or stops the sequencer.
 
 ### Channels
 
@@ -187,59 +187,56 @@ Control the overall volume output.
 
 ### Light / Dark mode
 
-Change the color scheme of the application.
+Changes the color scheme of the application.
 
 
 ## Sequencer view
 
 ![](images/sequencer.png)
 
-## Percussion id buttons
+## Percussion ID Buttons
 
-For each percussion id (Hihat, Snare, Kick, Ride, Crash, Cowbell, Tom hi, Tom lo) there is a corresponding button which opens the sequencer view for the corresponding drum or cymbal.
+For each channel or percussion ID (Hihat, Snare, Kick, Ride, Crash, Cowbell, Tom hi, Tom lo) there is a corresponding button which opens the sequencer view for the corresponding drum or cymbal.
 
-## Sequencer draw controls
+## Sequencer Draw Controls
 
-Draw with your finger to program the sequencer for the active percussion id.
+Draw with your finger to program the sequencer for the active channel / percussion ID.
 
-## Parameter lanes
+## Parameter Lanes
 
-### velocity
+### Velocity
 
-Control the velocity of the current active percussion id by drawing in the sequencer draw controls.
+Control the velocity of the current active channel / percussion ID by drawing in the sequencer draw controls.
 
-### decay
+### Decay
 
-Control the decay parameter of the current active percussion id by drawing in the sequencer draw controls.
+Control the decay parameter of the current active channel / percussion ID by drawing in the sequencer draw controls.
 
-### pitch
+### Pitch
 
-Control the pitch parameter of the current active percussion id by drawing in the sequencer draw controls.
+Control the pitch parameter of the current active channel / percussion ID by drawing in the sequencer draw controls.
 
-### flam
+### Flam
 
 Triggers up to 3 ghost notes together with the actual trigger.
 
-### roll
+### Roll
 
 Instead of a single trigger, create a "roll" of your drum.
 
-### chance
+### Chance
 
-This parameter is of interest when the sequencer is allowed to mutate some of its parameters.
-The probability that a given sequencer step is allowed to mutate is first of all determined by the "Mutate" knob (see below). This knob sets the percentage of steps that will be mutated (randomly).
-Suppose that the current step will be mutated. Then there are two mutation scenarios. The first scenario follows the "vocabulary" scenario. This means that the mutation will follow the underlying groove system of jAmp Percussive. The second scenario is the "random" scenario. In this case the mutation will follow the trigger probability that is set by this "chance" parameter. Whether the "vocabulary" scenario or the "random" scenario is followed, depends on the "Vocab." knob (see below).
-Suppose that the current step will follow the "random" scenario, then the probability that this step will be triggered is given by this "chance" parameter percentage-wise.
+This parameter is relevant when the sequencer is allowed to mutate some of its parameters. The probability that a given sequencer step is allowed to mutate is determined by the "Mutate" knob (see below). This knob sets the percentage of steps that will be mutated (randomly). If the current step will be mutated, there are two mutation scenarios. The first scenario follows the "vocabulary" scenario, where the mutation follows the underlying groove system of jAmp Percussive. The second scenario is the "random" scenario, where the mutation follows the trigger probability set by this "chance" parameter. Whether the "vocabulary" scenario or the "random" scenario is followed depends on the "Vocab." knob (see below). If the current step follows the "random" scenario, the probability that this step will be triggered is given by this "chance" parameter percentage-wise.
 
-### intensity
+### Intensity
 
 If this step is triggered by the "random" scenario (see "chance" parameter), then the "intensity" parameter sets the target velocity of the trigger. The velocity can still vary due to the "Soul" knob (see below).
 
-## Pattern buttons
+## Pattern Buttons
 
 There are 8 patterns available. Select a pattern by tapping the corresponding button.
 
-## Sequencer control knobs
+## Sequencer Control Knobs
 
 ### Tempo
 
@@ -247,7 +244,7 @@ Sets the tempo. When in "straight" mode, 4 sequencer steps account for one beat.
 
 ### Steps
 
-Set the number of steps that make up a full bar. In "straight" mode, the default is 16 steps, and in "shuffle" mode, the default is 12 steps. By modifying the number of steps interesting polyrhythms can be created. It is also possible to set different steps for different percussion ids, see the Channels view section below.
+Sets the number of steps that make up a full bar. In "straight" mode, the default is 16 steps, and in "shuffle" mode, the default is 12 steps. By modifying the number of steps, interesting polyrhythms can be created. It is also possible to set different steps for different percussion IDs; see the Channels view section below.
 
 ### Swing
 
@@ -273,36 +270,36 @@ If the groove system of jAmp Percussive is followed (see "chance" parameter, "mu
 
 If the groove system of jAmp Percussive is followed (see "chance" parameter, "mutate" knob, "vocab." knob), then you can control the spacing or groove density with this parameter.
 
-## straight / shuffle
+## Straight / Shuffle
 
 Switch between straight groove and shuffle groove. The switch from straight to shuffle will be made at the end of the current pattern.
 
-## regular / halftime
+## Regular / Halftime
 
 If the groove system of jAmp Percussive is followed (see "chance" parameter, "mutate" knob, "vocab." knob), then the underlying groove system can follow a halftime or a regular groove.
 
-## glitch / mutate / overwrite
+## Glitch / Mutate / Overwrite
 
 Let's assume a given step will be mutated (see "mutate" knob). Then three options are available:
   -  glitch: the current step is mutated, but the mutation is not stored. So next time we arrive here in the pattern we have the original setting again.
   -  mutate: the current step is mutated, and the system remembers the mutation, but the mutation is not written in the sequencer. Next time we arrive here in the pattern, we hear the mutation again. But the sequencer still remembers our original setting.
   -  overwrite: the current step is mutated, and the mutation is written in the sequencer.
 
-## solo groove dropdown
+## Solo Groove Dropdown
 
 In the case that the current step is mutating and following the "Vocabulary" scenario (see "chance" parameter, "mutate" knob, "vocab." knob), the mutation will following the groove system of jAmp Percussive. This groove system has two modes: normal mode or solo mode (see "solo" knob). In case we follow the solo mode, there are a couple of solo grooves that can be selected. Select any of the grooves from the dropdown to hear the differences (assuming that the mutate knob is not 0, that the vocab knob is not 0, and that the solo knob is not 0).  
 
-## manual / sequential / random
+## Manual / Sequential / Random
 
   - manual : play patterns in manual mode. The pattern that is currently active will be played.
   - sequential: play patterns sequentially.
   - random: play patterns in random order.
 
-## Channels view
+## Channels View
 
 ![](images/channels.png)
 
-### Volume / Pan rectangle
+### Volume / Pan Rectangle
 The Channels view lets you easily change the volume and panning of the 8 sequencer lanes (with each lane corresponding to a percussion id).
 
 ### Mute
@@ -320,25 +317,25 @@ When mutating (see "mutate" knob), allow the mutation to change the pitch parame
 ### Steps
 There is a general Steps knob that controls the steps for one bar in general. However, here the number of steps for a given channel can be controlled seperately so that polyrhythms can be created.
 
-## Presets view
+## Presets View
 
 ![](images/presets.png)
 
 Browse through the factory presets, or create your own presets. Share your presets with other people.
 
-### Save preset
+### Save Preset
 
 Save your current state as a user preset by entering a name. If the name you enter is colored red, you are about to overwrite an existing user preset.
 
-### Delete preset
+### Delete Preset
 
 Deletes the selected preset. Factory presets can not be deleted.
 
-### Share preset
+### Share Preset
 
-Will export the selected preset so that it can be shared with other people.
+Exports the selected preset so that it can be shared with other people.
 
-### Import preset
+### Import Preset
 
 Import any preset that was shared with you.
 
