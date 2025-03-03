@@ -194,46 +194,84 @@ Change the color scheme of the application.
 
 ![](images/sequencer.png)
 
-### Percussion id buttons
+## Percussion id buttons
 
 For each percussion id (Hihat, Snare, Kick, Ride, Crash, Cowbell, Tom hi, Tom lo) there is a corresponding button which opens the sequencer view for the corresponding drum or cymbal.
 
-### Sequencer draw controls
+## Sequencer draw controls
 
 Draw with your finger to program the sequencer for the active percussion id.
 
-### Parameter lanes
+## Parameter lanes
 
-#### velocity
+### velocity
 
 Control the velocity of the current active percussion id by drawing in the sequencer draw controls.
 
-#### decay
+### decay
 
 Control the decay parameter of the current active percussion id by drawing in the sequencer draw controls.
 
-#### pitch
+### pitch
 
 Control the pitch parameter of the current active percussion id by drawing in the sequencer draw controls.
 
-#### flam
+### flam
 
 Triggers up to 3 ghost notes together with the actual trigger.
 
-#### roll
+### roll
 
 Instead of a single trigger, create a "roll" of your drum.
 
-#### chance
+### chance
 
 This parameter is of interest when the sequencer is allowed to mutate some of its parameters.
 The probability that a given sequencer step is allowed to mutate is first of all determined by the "Mutate" knob (see below). This knob sets the percentage of steps that will be mutated (randomly).
 Suppose that the current step will be mutated. Then there are two mutation scenarios. The first scenario follows the "vocabulary" scenario. This means that the mutation will follow the underlying groove system of jAmp Percussive. The second scenario is the "random" scenario. In this case the mutation will follow the trigger probability that is set by this "chance" parameter. Whether the "vocabulary" scenario or the "random" scenario is followed, depends on the "Vocab." knob (see below).
 Suppose that the current step will follow the "random" scenario, then the probability that this step will be triggered is given by this "chance" parameter percentage-wise.
 
-#### intensity
+### intensity
 
 If this step is triggered by the "random" scenario (see "chance" parameter), then the "intensity" parameter sets the target velocity of the trigger. The velocity can still vary due to the "Soul" knob (see below).
+
+## Pattern buttons
+
+There are 8 patterns available. Select a pattern by tapping the corresponding button.
+
+## Sequencer control knobs
+
+### Tempo
+
+Sets the tempo. When in "straight" mode, 4 sequencer steps account for one beat. When in "shuffle" mode, 3 sequencer stpes account for one beat.
+
+### Steps
+
+Set the number of steps that make up a full bar. In "straight" mode, the default is 16 steps, and in "shuffle" mode, the default is 12 steps. By modifying the number of steps interesting polyrhythms can be created. It is also possible to set different steps for different percussion ids, see the Channels view section below.
+
+### Swing
+
+Delays some of the triggers in order to create a swing feel.
+
+### Mutate
+
+Sets the probability that a given sequencer step will mutate. There are two mutation scenarios. The first scenario follows the "vocabulary" scenario. This means that the mutation will follow the underlying groove system of jAmp Percussive. The other scenario is the "random" scenario. In this case the mutation will follow the trigger probability that is set by the "chance" parameter for that step.
+
+### Vocab.
+
+If the current step should mutate, then this parameter controls the probabilty that the "vocabulary" scenario should be followed. The "vocabulary" scenario means that the mutation will follow the underlying groove system of jAmp Percussive. The other scenario is the "random" scenario. In this case the mutation will follow the trigger probability that is set by the "chance" parameter for that step.
+
+### Solo
+
+In the case that the current step is mutating and following the "Vocabulary" scenario (see "chance" parameter, "mutate" knob, "vocab." knob), the mutation will following the groove system of jAmp Percussive. This groove system has two modes: normal mode or solo mode. The solo knob determines the probability that normal or solo mode is followed.
+
+### Cowbell/HH/Ride
+
+If the groove system of jAmp Percussive is followed (see "chance" parameter, "mutate" knob, "vocab." knob), the groove will use a cowbell, or hihat, or ride. With this parameter you can control the instrumentation of cowbell / hihat / ride.
+
+### Space
+
+If the groove system of jAmp Percussive is followed (see "chance" parameter, "mutate" knob, "vocab." knob), then you can control the spacing or groove density with this parameter.
 
 ## Channels view
 
