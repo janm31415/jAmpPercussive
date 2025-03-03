@@ -255,11 +255,11 @@ Delays some of the triggers in order to create a swing feel.
 
 ### Mutate
 
-Sets the probability that a given sequencer step will mutate. There are two mutation scenarios. The first scenario follows the "vocabulary" scenario. This means that the mutation will follow the underlying groove system of jAmp Percussive. The other scenario is the "random" scenario. In this case the mutation will follow the trigger probability that is set by the "chance" parameter for that step.
+Sets the probability that a given sequencer step will mutate. There are two mutation scenarios. The first scenario follows the "vocabulary" scenario. This means that the mutation will follow the underlying groove system of jAmp Percussive. The other scenario is the "random" scenario. In that case the mutation will follow the trigger probability that is set by the "chance" parameter for that step.
 
 ### Vocab.
 
-If the current step should mutate, then this parameter controls the probabilty that the "vocabulary" scenario should be followed. The "vocabulary" scenario means that the mutation will follow the underlying groove system of jAmp Percussive. The other scenario is the "random" scenario. In this case the mutation will follow the trigger probability that is set by the "chance" parameter for that step.
+If the current step should mutate, then this parameter controls the probabilty that the "vocabulary" scenario should be followed. The "vocabulary" scenario means that the mutation will follow the underlying groove system of jAmp Percussive. The other scenario is the "random" scenario. In that case the mutation will follow the trigger probability that is set by the "chance" parameter for that step.
 
 ### Solo
 
@@ -267,11 +267,34 @@ In the case that the current step is mutating and following the "Vocabulary" sce
 
 ### Cowbell/HH/Ride
 
-If the groove system of jAmp Percussive is followed (see "chance" parameter, "mutate" knob, "vocab." knob), the groove will use a cowbell, or hihat, or ride. With this parameter you can control the instrumentation of cowbell / hihat / ride.
+If the groove system of jAmp Percussive is followed (see "chance" parameter, "mutate" knob, "vocab." knob), the groove will use a cowbell, or hihat, or ride. With this parameter you can control the instrumentation.
 
 ### Space
 
 If the groove system of jAmp Percussive is followed (see "chance" parameter, "mutate" knob, "vocab." knob), then you can control the spacing or groove density with this parameter.
+
+## straight / shuffle
+
+Switch between straight groove and shuffle groove. The switch from straight to shuffle will be made at the end of the current pattern.
+
+## regular / halftime
+
+If the groove system of jAmp Percussive is followed (see "chance" parameter, "mutate" knob, "vocab." knob), then the underlying groove system can follow a halftime or a regular groove.
+
+## glitch / mutate / overwrite
+
+Let's assume a given step will be mutated (see "mutate" knob). Then three options are available:
+  -  glitch: the current step is mutated, but the mutation is not stored. So next time we arrive here in the pattern we have the original setting again.
+  -  mutate: the current step is mutated, and the system remembers the mutation, but the mutation is not written in the sequencer. Next time we arrive here in the pattern, we hear the mutation again. But the sequencer still remembers our original setting.
+  -  overwrite: the current step is mutated, and the mutation is written in the sequencer.
+
+## solo algorithm dropdown
+
+## manual / sequential / random
+
+  - manual : play patterns in manual mode. The pattern that is currently active will be played.
+  - sequential: play patterns sequentially.
+  - random: play patterns in random order.
 
 ## Channels view
 
