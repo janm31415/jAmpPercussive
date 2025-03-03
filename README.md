@@ -55,22 +55,22 @@ There are two types of synthesized sounds available. The 8 top buttons can be us
 ## MIDI step button
 To each button we can assign a MIDI note. Triggering this MIDI note will trigger the corresponding drum or cymbal sound.
 
-## Name id dropdown
-Each button can be given a name id. This name id will be used by the sequencer (see later).
-The top 8 buttons, corresponding to membrane based drum sounds, can be given one of the following name ids:
+## Percussion id dropdown
+Each button can be given a percussion id. This percussion id will be used by the sequencer (see later).
+The top 8 buttons, corresponding to membrane based drum sounds, can be given one of the following percussion ids:
   - kick
   - snare
   - tom lo
   - tom hi
   - cowbell
 
-while the bottom 8 buttons, corresponding to cymbal sounds, can be given the following name ids:
+while the bottom 8 buttons, corresponding to cymbal sounds, can be given the following percussion ids:
 
   - hihat
   - ride
   - crash
 
-Note that a name id is unique. If a button is given the name id "hihat", then any other "hihat" button will become empty.
+Note that a percussion id is unique. If a button is given the percussion id "hihat", then any other "hihat" button will become empty.
 
 ## Silence mode
 This is a tappable button. When activated, the large buttons will not trigger a sound anymore. This is interesting when one wants to modify the parameters of a drum or cymbal while the sequencer is playing without causing and extra trigger.
@@ -193,6 +193,47 @@ Change the color scheme of the application.
 ## Sequencer view
 
 ![](images/sequencer.png)
+
+### Percussion id buttons
+
+For each percussion id (Hihat, Snare, Kick, Ride, Crash, Cowbell, Tom hi, Tom lo) there is a corresponding button which opens the sequencer view for the corresponding drum or cymbal.
+
+### Sequencer draw controls
+
+Draw with your finger to program the sequencer for the active percussion id.
+
+### Parameter lanes
+
+#### velocity
+
+Control the velocity of the current active percussion id by drawing in the sequencer draw controls.
+
+#### decay
+
+Control the decay parameter of the current active percussion id by drawing in the sequencer draw controls.
+
+#### pitch
+
+Control the pitch parameter of the current active percussion id by drawing in the sequencer draw controls.
+
+#### flam
+
+Triggers up to 3 ghost notes together with the actual trigger.
+
+#### roll
+
+Instead of a single trigger, create a "roll" of your drum.
+
+#### chance
+
+This parameter is of interest when the sequencer is allowed to mutate some of its parameters.
+The probability that a given sequencer step is allowed to mutate is first of all determined by the "Mutate" knob (see below). This knob sets the percentage of steps that will be mutated (randomly).
+Suppose that the current step will be mutated. Then there are two mutation scenarios. The first scenario follows the "vocabulary" scenario. This means that the mutation will follow the underlying groove system of jAmp Percussive. The second scenario is the "random" scenario. In this case the mutation will follow the trigger probability that is set by this "chance" parameter. Whether the "vocabulary" scenario or the "random" scenario is followed, depends on the "Vocab." knob (see below).
+Suppose that the current step will follow the "random" scenario, then the probability that this step will be triggered is given by this "chance" parameter percentage-wise.
+
+#### intensity
+
+If this step is triggered by the "random" scenario (see "chance" parameter), then the "intensity" parameter sets the target velocity of the trigger. The velocity can still vary due to the "Soul" knob (see below).
 
 ## Channels view
 
