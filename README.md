@@ -190,3 +190,33 @@ Control the overall volume output.
 Change the color scheme of the application.
 
 
+## Sequencer view
+
+![](images/sequencer.png)
+
+## Channels view
+
+![](images/channels.png)
+
+## Presets view
+
+![](images/presets.png)
+
+Browse through the factory presets, or create your own presets. Share your presets with other people.
+
+### Save preset
+
+Save your current state as a user preset by entering a name. If the name you enter is colored red, you are about to overwrite an existing user preset.
+
+### Delete preset
+
+Deletes the selected preset. Factory presets can not be deleted.
+
+### Share preset
+
+Will export the selected preset so that it can be shared with other people.
+
+### Import preset
+
+Import any preset that was shared with you.
+
