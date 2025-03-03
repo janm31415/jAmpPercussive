@@ -48,14 +48,14 @@ Note that it is not possible to purchase the audio plugin via a third-party host
 The main view of the application contains a navigation bar on top, a bunch of knobs that control the synthesized sounds, a row with some additional settings, and 16 large buttons that will produce a drum sound when hit. 
 Let's go over the different buttons and knobs from the bottom of the view to the top.
 
-### 16 large buttons
+## 16 large buttons
 The large buttons will produce a drum or cymbal sound when they are tapped, or when the corresponding MIDI note is triggered.
 There are two types of synthesized sounds available. The 8 top buttons can be used to create membrane based drum sounds, while the bottom 8 buttons are used to create cymbal sounds. 
 
-### MIDI step button
+## MIDI step button
 To each button we can assign a MIDI note. Triggering this MIDI note will trigger the corresponding drum or cymbal sound.
 
-### Name id dropdown
+## Name id dropdown
 Each button can be given a name id. This name id will be used by the sequencer (see later).
 The top 8 buttons, corresponding to membrane based drum sounds, can be given one of the following name ids:
   - kick
@@ -72,81 +72,121 @@ while the bottom 8 buttons, corresponding to cymbal sounds, can be given the fol
 
 Note that a name id is unique. If a button is given the name id "hihat", then any other "hihat" button will become empty.
 
-### Silence mode
+## Silence mode
 This is a tappable button. When activated, the large buttons will not trigger a sound anymore. This is interesting when one wants to modify the parameters of a drum or cymbal while the sequencer is playing without causing and extra trigger.
 
-### Membrane based drum parameters
+## Membrane based drum parameters
 
-#### Pitch
+### Pitch
 Represents the main pitch of the drum sound, in Hertz.
 
-#### Decay
+### Decay
 Controls the length of resonance of the drum.
 
-#### Low pass
+### Low pass
 A low pass filter that will filter away the higher frequencies.
 
-#### Overtone gain
+### Overtone gain
 Controls the inharmonicity of the sound by changing the amount of feedback gain in the underlying all-pass filter.
 
-#### Overtone pitch
+### Overtone pitch
 Controls the inharmonicity of the sound by changing the frequency in the underlying all-pass filter.
 
-#### Noise pitch
+### Noise pitch
 Any noise will first pass through a band pass filter. With this knob the frequency range of this band pass filter can be controlled.
 
-#### Noise
+### Noise
 Adds filtered white noise to the sound. Mainly used to simulate a snare.
 
-#### Pitch bend
+### Pitch bend
 When trigger, the drum will start a the initial pitch, but will then bend lower. The amount of pitch bend can be controlled with this knob.
 
-#### Mallet
+### Mallet
 Simulates the usage of soft and hard mallets.
 
-#### Velocity
+### Velocity
 Represents the force of a drum trigger.
 
-#### Level
+### Level
 Finetune the gain of this drum.
 
-#### Pan
+### Pan
 Left or right stereo panning.
 
-### Cymbal based drum parameters
+## Cymbal based drum parameters
 
-#### Pitch
+### Pitch
 Control the pitch of the cymbal, in steps of half tones. Goes from -24 (or - 2 octaves) to +24 (or + 2 octaves).
 
-#### Decay
+### Decay
 Controls the length of resonance of the cymbal.
 
-#### High pass
+### High pass
 A high pass filter that will filter away the lower frequencies.
 
-#### Timbre
+### Timbre
 Changes the overall sound of the cymbal.
 
-#### Attack
+### Attack
 Sharp attacking sound, or slowly increasing build up of sound.
 
-#### Crash delay
+### Crash delay
 This parameter assumes that the "Mallet soft" knob is not fully turned down. The parameter expresses in seconds (0s - 3s) the amount of delay until the cymbal sound "crashes".
 
-#### Noise
+### Noise
 Controls the amount of filtered white noise.
 
-#### Mallet soft
+### Mallet soft
 The initial cymbal trigger can be controlled by this knob. It goes from a pop of white noise to a soft oscillating sine pulse, or anything in between.
 
-#### Mallet pitch
+### Mallet pitch
 See previous parameter. This parameter controls the frequency of the soft oscillating sine pulse of the mallet.
 
-#### Velocity
+### Velocity
 Represents the force of a cymbal trigger.
 
-#### Level
+### Level
 Finetune the gain of this drum.
 
-#### Pan
+### Pan
 Left or right stereo panning.
+
+## Navigation bar
+
+On top of the view we have the navigation bar.
+
+### Copy
+
+When in synthesizer view, the copy button will copy the parameters of the current active drum or cymbal.
+When in sequencer view, the copy button will copy the current sequencer pattern.
+
+### Paste
+
+When in synthesizer view, the current active drum or cymbal will be replaced by the last copied drum or cymbal.
+When in sequencer view, the current active pattern will be replaced by the last copied pattern.
+
+### Presets
+
+Open the presets view. See later for a more detailed description.
+
+### Synth / Sequencer
+
+Switch between the synthesizer view and the sequencer view.
+
+### Play / Stop
+
+Start or stop the sequencer.
+
+### Channels
+
+Open the channels view. See later for a more detailed description.
+
+### Volume knob
+
+Control the overall volume output.
+
+### Light / Dark mode
+
+Change the color scheme of the application.
+
+
