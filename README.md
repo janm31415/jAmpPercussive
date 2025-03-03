@@ -288,7 +288,9 @@ Let's assume a given step will be mutated (see "mutate" knob). Then three option
   -  mutate: the current step is mutated, and the system remembers the mutation, but the mutation is not written in the sequencer. Next time we arrive here in the pattern, we hear the mutation again. But the sequencer still remembers our original setting.
   -  overwrite: the current step is mutated, and the mutation is written in the sequencer.
 
-## solo algorithm dropdown
+## solo groove dropdown
+
+In the case that the current step is mutating and following the "Vocabulary" scenario (see "chance" parameter, "mutate" knob, "vocab." knob), the mutation will following the groove system of jAmp Percussive. This groove system has two modes: normal mode or solo mode (see "solo" knob). In case we follow the solo mode, there are a couple of solo grooves that can be selected. Select any of the grooves from the dropdown to hear the differences (assuming that the mutate knob is not 0, that the vocab knob is not 0, and that the solo knob is not 0).  
 
 ## manual / sequential / random
 
