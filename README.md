@@ -21,7 +21,7 @@ Minimal requirements are:
 
 The jAmp Percussive software is distributed via the Apple App store. Click on the App store badge to go to the download location.
 
-[![](images/AppStore.png)](https://apps.apple.com/us/app/jamp-8100/id6450633716)
+[![](images/AppStore.png)](https://apps.apple.com/us/app/jamp-percussive/id6479564742)
 
 
 ## Purchase Info
