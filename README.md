@@ -289,6 +289,10 @@ Let's assume a given step will be mutated (see "mutate" knob). Then three option
 
 In the case that the current step is mutating and following the "Vocabulary" scenario (see "chance" parameter, "mutate" knob, "vocab." knob), the mutation will following the groove system of jAmp Percussive. This groove system has two modes: normal mode or solo mode (see "solo" knob). In case we follow the solo mode, there are a couple of solo grooves that can be selected. Select any of the grooves from the dropdown to hear the differences (assuming that the mutate knob is not 0, that the vocab knob is not 0, and that the solo knob is not 0).  
 
+## Sync / No Sync
+
+This button only appears when jAmp Percussive is running as AUv3 in a host DAW that supports a transport layer. If syncing is turned on, the tempo will be termined by the tempo marker that is provided by the host application. If off, the tempo is controlled by jAmp Percussive's own tempo knob.
+
 ## Manual / Sequential / Random
 
   - manual : play patterns in manual mode. The pattern that is currently active will be played.
