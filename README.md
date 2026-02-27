@@ -404,9 +404,9 @@ The Kits view allows you to save and recall **only the sound parameters** (drum 
 
 | Feature | Presets | Kits |
 |---------|---------|------|
-| Saves sound parameters | ‚úì | ‚úì |
-| Saves sequencer patterns | ‚úì | ‚úó |
-| Saves mixer settings | ‚úì | ‚úó |
+| Saves sound parameters | X | X |
+| Saves sequencer patterns | X | - |
+| Saves mixer settings | X | - |
 
 ### Factory vs User Kits
 - **Factory**: Pre-made kits that come with jAmp Percussive (ElectroKit, FunkKit, JazzKit, TechnoKit, TribalKit, etc.). These cannot be deleted or modified.
